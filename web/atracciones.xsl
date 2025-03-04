@@ -16,9 +16,9 @@
 	<body>
 		<header>
 			<img src= "../img/logotipo.png" alt= "Reservas" />
-			<a href="web/gastrobar.xml">Gastrobar</a>
-			<a href="web/atracciones.xml">Atracciones</a>
-			<a href="web/eventos.xml">Eventos</a>
+			<a href="gastrobar.xml">Gastrobar</a>
+			<a href="atracciones.xml">Atracciones</a>
+			<a href="eventos.xml">Eventos</a>
 		</header>
 		
 		<main>
@@ -35,7 +35,6 @@
 					 <!-- Creamos una variable llamada "dato_intermedio" que almacena el nombre de la atracción,
         		     reemplazando los espacios por guiones bajos (_) para formar una URL válida de Wikipedia. -->
  					<xsl:variable name="dato_intermedio" select="translate(../nombre, ' ', '_')"/>
-				<xsl:value-of select="$dato_intermedio" />	
 				
 				<tr>
 				    <!-- Se crea un enlace en la primera celda de la fila. El enlace apunta a Wikipedia con el nombre 
